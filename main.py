@@ -19,6 +19,14 @@ def send_email(fromaddr, to_addrs, subject, body, attachment, password):
         attach.add_header('Content-Disposition',
                           'attachment; filename="{}"'.format(attachment))
         msg.attach(attach)
+        
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.starttls()
+    server.login(fromaddr, password)
+
+    message = msg.as_string()
+    server.sendmail(fromaddr, to_addrs, message)
+    server.quit()
 
 
 if __name__ == '__main__':
