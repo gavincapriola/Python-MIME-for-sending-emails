@@ -10,7 +10,15 @@ def send_email(fromaddr, to_addrs, subject, body, attachment, password):
     msg['From'] = fromaddr
     msg['To'] = ', '.join(to_addrs)
     msg['Subject'] = subject
-    msg.attach(MIMEText(body, 'plain'))  
+    msg.attach(MIMEText(body, 'plain'))
+    
+    with open(attachment, 'rb') as f:
+        attach = MIMEBase('application', 'octet-stream')
+        attach.set_payload(f.read()) 
+        encoders.encode_base64(attach) 
+        attach.add_header('Content-Disposition',
+                          'attachment; filename="{}"'.format(attachment))
+        msg.attach(attach)
 
 
 if __name__ == '__main__':
