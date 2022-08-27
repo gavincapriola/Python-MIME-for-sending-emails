@@ -6,7 +6,11 @@ from email.mime.text import MIMEText
 
 
 def send_email(fromaddr, to_addrs, subject, body, attachment, password):
-    pass  
+    msg = MIMEMultipart()
+    msg['From'] = fromaddr
+    msg['To'] = ', '.join(to_addrs)
+    msg['Subject'] = subject
+    msg.attach(MIMEText(body, 'plain'))  
 
 
 if __name__ == '__main__':
