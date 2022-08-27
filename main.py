@@ -6,6 +6,16 @@ from email.mime.text import MIMEText
 
 
 def send_email(fromaddr, to_addrs, subject, body, attachment, password):
+    """The function sends an email with the given arguments.
+
+    The arguments are:
+        - fromaddr   : the email address of the sender
+        - to_addrs   : the email address of the recipient
+        - subject    : the subject of the email
+        - body       : the body of the email
+        - attachment : the path of the attachment
+        - password   : the password of the email account
+    """
     msg = MIMEMultipart()
     msg['From'] = fromaddr
     msg['To'] = ', '.join(to_addrs)
