@@ -1,4 +1,9 @@
-### Sending Emails With Python
+## Sending Emails With Python
+
+[![contributors](https://img.shields.io/github/contributors/gavincapriola/Python-MIME-for-sending-emails)](https://github.com/gavincapriola/Python-MIME-for-sending-emails/graphs/contributors)
+[![forks](https://img.shields.io/github/forks/gavincapriola/Python-MIME-for-sending-emails)](https://github.com/gavincapriola/Python-MIME-for-sending-emails/fork)
+[![stars](https://img.shields.io/github/stars/gavincapriola/Python-MIME-for-sending-emails)](https://github.com/gavincapriola/Python-MIME-for-sending-emails/stargazers)
+[![issues](https://img.shields.io/github/issues/gavincapriola/Python-MIME-for-sending-emails)](https://github.com/gavincapriola/Python-MIME-for-sending-emails/issues)
 
 Make sure you have [Python3](https://www.python.org/download/) installed on your supported operating system.
 
@@ -7,12 +12,15 @@ sudo apt-get install python3
 sudo apt install python3-pip
 ```
 
+---
+
 ### Gmail setup
 1. Go to https://myaccount.google.com/security
 2. Under "Signing in to Google" select **App passwords**. You may need to sign in.
 3. Select the app('Mail' in this case) and device(I used 'Windows Computer').
 4. Click **Generate**, save the password.
 
+---
 
 ### :handshake: Contributing
 
