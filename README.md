@@ -11,7 +11,6 @@ Make sure you have [Python3](https://www.python.org/download/) installed on your
 sudo apt-get install python3
 sudo apt install python3-pip
 ```
-
 ---
 
 ### Gmail setup
@@ -19,6 +18,8 @@ sudo apt install python3-pip
 2. Under "Signing in to Google" select **App passwords**. You may need to sign in.
 3. Select the app('Mail' in this case) and device(I used 'Windows Computer').
 4. Click **Generate**, save the password.
+
+If you are having an issue please take a look at https://github.com/gavincapriola/Python-MIME-for-sending-emails/issues/1#issue-1353142864
 
 ---
 
